@@ -9,8 +9,10 @@ class ReviewsController < ApplicationController
     @product = Product.find(params[:product_id])
     @review = @product.reviews.new(review_params)
     if @review.save
+      flash[:notice] = "Review successfully added!"
       redirect_to product_path(@product)
     else
+      flash[:notice] = "Whoops something went wrong!"
       render :new
     end
   end
@@ -31,7 +33,9 @@ class ReviewsController < ApplicationController
     @review = Review.find(params[:id])
     if @review.update(review_params)
       redirect_to product_path(@review.product)
+      flash[:notice] = "Review successfully updated!"
     else
+      flash[:notice] = "Whoops something went wrong!"
       render :edit
     end
 
