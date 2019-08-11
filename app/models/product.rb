@@ -1,5 +1,10 @@
 class Product < ApplicationRecord
 
+
+ scope :three_most_recent, -> { order(created_at: :desc).limit(3)}
+
+
+  #The three most recently added products.
   has_many :reviews, dependent: :destroy
   validates :name, presence: true
   validates :cost, presence: true
