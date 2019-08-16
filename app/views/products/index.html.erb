@@ -7,6 +7,12 @@
   <%= link_to product.name, product_path(product) %></li>
 <% end %>
 
+<h2>Top reviewed products</h2>
+
+<% Product.most_reviews.each do |product| %>
+  <%= link_to product.name, product_path(product) %></li>
+<% end %>
+
 
 <h2>All products</h2>
 
