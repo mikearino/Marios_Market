@@ -1,17 +1,32 @@
 <h1>Products</h1>
 
-<h2>Top three products.</h2>
+<h2>Most recent products.</h2>
 
+<% if Product.three_most_recent.any? %>
+<ul>
 
 <% Product.three_most_recent.each do |product| %>
-  <%= link_to product.name, product_path(product) %></li>
+  <li><%= link_to product.name, product_path(product) %></li>
+  <% end %>
+</ul>
+<% else %>
+<p>No reviews right now.</p>
 <% end %>
 
-<h2>Top reviewed products</h2>
+<h2>Top reviewed product</h2>
+<% if Product.most_reviews.any? %>
 
-<% Product.most_reviews.each do |product| %>
-  <%= link_to product.name, product_path(product) %></li>
+<ul>
+  <% Product.most_reviews.each do |product| %>
+  <li><%= link_to product.name, product_path(product) %></li>
+  <% end %>
+</ul>
+<% else %>
+<p>No reviews right now.</p>
 <% end %>
+
+
+
 
 
 <h2>All products</h2>
