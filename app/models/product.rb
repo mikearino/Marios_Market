@@ -3,7 +3,7 @@ class Product < ApplicationRecord
 
  scope :three_most_recent, -> { order(created_at: :desc).limit(3)}
 
-scope :product_with_most_reviews, -> {order}
+scope :product_with_most_reviews, -> {where}
 
  #The product with the most reviews.
 
