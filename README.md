@@ -1,24 +1,36 @@
-# Marios Foods
+# Marios Super Foods
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### A program for a food front.
 
-Things you may want to cover:
+#### By **Mike Lofgren**
 
-* Ruby version
+## Description
 
-* System dependencies
+A program created with Rails to review foods from an online food store.
 
-* Configuration
+## Setup/Installation Requirements
 
-* Database creation
+1. To run this program, clone repository from this GitHub.
+2. Open the terminal. If you can't find it do a local search on your computer.
+6. Run rake db:create
+3. Run rails s
+5. Seed database with rake db:seed
+4. Navigate to localhost:3000
+7. Enjoy the amazing super mario themed UI!
 
-* Database initialization
 
-* How to run the test suite
+## Known Bugs
+* No known bugs at this time.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Technologies Used
+  * Ruby
 
-* Deployment instructions
+## Support and contact details
 
-* ...
+If there are any questions, bugs or concerns, please contact mikeylofgren@gmail.com
+
+### License
+
+*This software is licensed under the MIT license*
+
+Copyright (c) 2019 **Mike Lofgren**
