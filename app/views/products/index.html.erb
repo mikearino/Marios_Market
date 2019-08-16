@@ -1,58 +1,64 @@
-<h1>Products</h1>
+<div class="container">
 
-<h2>Most recent products.</h2>
+  <div class="row">
 
-<% if Product.three_most_recent.any? %>
-<ul>
+    <div class="col-md-4">
+      <h2>Most recent products</h2>
 
-<% Product.three_most_recent.each do |product| %>
-  <li><%= link_to product.name, product_path(product) %></li>
-  <% end %>
-</ul>
-<% else %>
-<p>No reviews right now.</p>
-<% end %>
+      <% if Product.three_most_recent.any? %>
+      <ul>
 
-<h2>Products made in USA.</h2>
-
-<% if Product.usa_made.any? %>
-<ul>
-
-<% Product.usa_made.each do |product| %>
-  <li><%= link_to product.name, product_path(product) %></li>
-  <% end %>
-</ul>
-<% else %>
-<p>No reviews right now.</p>
-<% end %>
-
-<h2>Top reviewed product</h2>
-<% if Product.most_reviews.any? %>
-
-<ul>
-  <% Product.most_reviews.each do |product| %>
-  <li><%= link_to product.name, product_path(product) %></li>
-  <% end %>
-</ul>
-<% else %>
-<p>No reviews right now.</p>
-<% end %>
+        <% Product.three_most_recent.each do |product| %>
+        <li><%= link_to product.name, product_path(product) %></li>
+        <% end %>
+      </ul>
+      <% else %>
+      <p>No reviews right now.</p>
+      <% end %>
+    </div>
 
 
 
+    <div class="col-md-4">
+      <h2>Products made in US</h2>
+
+      <% if Product.usa_made.any? %>
+      <ul>
+
+        <% Product.usa_made.each do |product| %>
+        <li><%= link_to product.name, product_path(product) %></li>
+        <% end %>
+      </ul>
+      <% else %>
+      <p>No reviews right now.</p>
+      <% end %>
+    </div>
+
+    <div class="col-md-4">
+      <h2>Most reviewed product</h2>
+      <% if Product.most_reviews.any? %>
+
+      <ul>
+        <% Product.most_reviews.each do |product| %>
+        <li><%= link_to product.name, product_path(product) %></li>
+        <% end %>
+      </ul>
+      <% else %>
+      <p>No reviews right now.</p>
+      <% end %>
+    </div>
 
 
-<h2>All products</h2>
-
-<% if @products.any? %>
-  <ul>
-    <% @products.each do |product| %>
+    <h2>All products</h2>
+    <% if @products.any? %>
+    <ul>
+      <% @products.each do |product| %>
       <%= link_to product.name, product_path(product) %></li>
+      <% end %>
+    </ul>
+    <% else %>
+    <p>There are no products yet.</p>
     <% end %>
-  </ul>
-<% else %>
-  <p>There are no products yet.</p>
-<% end %>
-
-
-<p><%= link_to "Create new product", new_product_path %></p>
+    <p><%= link_to "Create new product", new_product_path %></p>
+  </div>
+</div>
