@@ -2,8 +2,9 @@ class Product < ApplicationRecord
 
 
  scope :three_most_recent, -> { order(created_at: :desc).limit(3)}
+ #The product with the most reviews.
 
-
+# All products made in the USA for buyers that want to buy local products
   #The three most recently added products.
   has_many :reviews, dependent: :destroy
   validates :name, presence: true
