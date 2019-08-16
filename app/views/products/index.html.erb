@@ -13,6 +13,19 @@
 <p>No reviews right now.</p>
 <% end %>
 
+<h2>Products made in USA.</h2>
+
+<% if Product.usa_made.any? %>
+<ul>
+
+<% Product.usa_made.each do |product| %>
+  <li><%= link_to product.name, product_path(product) %></li>
+  <% end %>
+</ul>
+<% else %>
+<p>No reviews right now.</p>
+<% end %>
+
 <h2>Top reviewed product</h2>
 <% if Product.most_reviews.any? %>
 
