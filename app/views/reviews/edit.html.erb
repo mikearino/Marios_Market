@@ -1,4 +1,5 @@
 <h1>Edit review:</h1>
+<div class="forms">
 
 <%= form_for [@product, @review] do |f| %>
   <%= f.label :author %>
@@ -7,3 +8,4 @@
   <%= f.text_area :content_body %>
   <p><%= f.submit %></p>
 <% end %>
+</div>

@@ -14,6 +14,10 @@
      padding: 0;
  }
 
+ .forms {
+   z-index: 1000;
+ }
+
  .sky, .ground{
      position: relative; /*Because we want to position items on and in them!*/
  }
@@ -29,6 +33,7 @@
 
  }
  .scorebar{
+   z-index: -100;
      position: absolute;
      height: 120px;
      width:100%;
@@ -42,8 +47,9 @@
      line-height: 0.2;
  }
  .cloud{
-     position: absolute;
-     height: 100px;
+   z-index: 1;
+   position: absolute;
+   height: 100px;
 
  }
      .cloud:nth-child(2){
