@@ -48,6 +48,7 @@
       <% end %>
     </div>
 
+<div id="all">
 
     <h2>All products</h2>
     <% if @products.any? %>
@@ -60,5 +61,6 @@
     <p>There are no products yet.</p>
     <% end %>
     <p><%= link_to "Create new product", new_product_path %></p>
+  </div>
   </div>
 </div>
