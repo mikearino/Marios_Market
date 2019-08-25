@@ -12,10 +12,10 @@ A program created with Rails to review foods from an online food store.
 
 1. To run this program, clone repository from this GitHub.
 2. Open the terminal. If you can't find it do a local search on your computer.
-6. Run rake db:create
-3. Run rails s
+3. Run rake db:create
+4. Run rails s
 5. Seed database with rake db:seed
-4. Navigate to localhost:3000
+6. Navigate to localhost:3000
 7. Enjoy the amazing super mario themed UI!
 
 
