@@ -1,4 +1,4 @@
-# Marios Super Foods
+# Super Marios Super Foods
 
 #### A program for a food front.
 
