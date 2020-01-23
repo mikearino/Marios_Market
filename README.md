@@ -4,6 +4,10 @@
 
 #### By **Mike Lofgren**
 
+<p align="center">
+  <img src="msf.gif">
+</p>
+
 ## Description
 
 A program created with Rails to review foods from an online food store.
@@ -18,12 +22,13 @@ A program created with Rails to review foods from an online food store.
 6. Navigate to localhost:3000
 7. Enjoy the amazing super mario themed UI!
 
-
 ## Known Bugs
-* No known bugs at this time.
+
+- No known bugs at this time.
 
 ## Technologies Used
-  * Ruby
+
+- Ruby
 
 ## Support and contact details
 
@@ -31,6 +36,6 @@ If there are any questions, bugs or concerns, please contact mikeylofgren@gmail.
 
 ### License
 
-*This software is licensed under the MIT license*
+_This software is licensed under the MIT license_
 
 Copyright (c) 2019 **Mike Lofgren**
