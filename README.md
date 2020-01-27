@@ -2,7 +2,7 @@
 
 https://polar-caverns-49723.herokuapp.com/
 
-#### A program for a food front.
+#### A program for a food front deployed to Heroku.
 
 #### By **Mike Lofgren**
 
@@ -31,6 +31,10 @@ A program created with Rails to review foods from an online food store.
 ## Technologies Used
 
 - Ruby
+- Rails
+- Postgres
+- Faker
+- Heroku
 
 ## Support and contact details
 
